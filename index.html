@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מבצע חירום - לא משאירים אף אדם ללא תרופה</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        rubik: ['Rubik', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#dc2626', // Red for emergency
+                        primaryDark: '#b91c1c',
+                        secondary: '#1e293b', // Slate for text
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Rubik', sans-serif; scroll-behavior: smooth; }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3 sm:gap-4">
+                <a href="https://www.haverim.org.il" target="_blank" class="flex-shrink-0 transition transform hover:scale-105" title="לאתר חברים לרפואה">
+                    <img src="לוגו%20חברים%20לרפואה%202025.png" onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/he/3/30/Haverim.Lerefua.logo.jpeg';" alt="לוגו חברים לרפואה" class="h-12 sm:h-16 w-auto object-contain">
+                </a>
+                <div class="h-8 border-r-2 border-slate-200 hidden sm:block"></div>
+                <div class="flex items-center gap-2">
+                    <div class="bg-primary text-white p-2 rounded-full h-8 w-8 sm:h-10 sm:w-10 hidden sm:flex items-center justify-center">
+                        <i class="fa-solid fa-briefcase-medical text-sm sm:text-lg"></i>
+                    </div>
+                    <span class="font-bold text-sm sm:text-xl text-secondary leading-tight">מערך התרופות<br class="sm:hidden">בחירום</span>
+                </div>
+            </div>
+            <a href="#donate" class="bg-primary hover:bg-primaryDark text-white px-4 sm:px-6 py-2 rounded-full font-bold text-sm sm:text-base transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 whitespace-nowrap">
+                לתרומה דחופה <i class="fa-solid fa-heart ml-1"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section with Video -->
+    <section class="bg-slate-900 text-white py-16 lg:py-24">
+        <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
+            
+            <!-- Text Content -->
+            <div class="lg:w-1/2 space-y-6">
+                <div class="inline-block bg-red-600 text-white px-3 py-1 rounded-full text-sm font-bold tracking-wide mb-2 animate-pulse">
+                    <i class="fa-solid fa-triangle-exclamation mr-1"></i> קריאת חירום - מלחמת שאגת הארי
+                </div>
+                <h1 class="text-4xl lg:text-5xl font-extrabold leading-tight">
+                    לא נשאיר אף אדם<br>
+                    <span class="text-red-500">ללא תרופה מצילת חיים.</span>
+                </h1>
+                <p class="text-lg text-slate-300 leading-relaxed">
+                    בזמן שהחזית בוערת, החולים בעורף <strong>והחיילים הפצועים</strong> שחזרו משדה הקרב זקוקים לנו. מערך הרוקחים והשליחים שלנו פועל תחת אש כדי לספק תרופות למי שזקוק להן נואשות. 
+                    <strong class="text-white">אנחנו חייבים את העזרה שלכם כדי להמשיך.</strong>
+                </p>
+                <div class="pt-4">
+                    <a href="#donate" class="inline-block bg-red-600 hover:bg-red-700 text-white text-xl px-8 py-4 rounded-full font-bold transition shadow-[0_0_15px_rgba(220,38,38,0.5)]">
+                        תרמו עכשיו והצילו חיים
+                    </a>
+                </div>
+            </div>
+
+            <!-- Video Embedded -->
+            <div class="lg:w-1/2 w-full">
+                <!-- כאן מטמיעים את הוידאו מיוטיוב עם תמונה מקדימה מותאמת אישית -->
+                <div class="video-container border-4 border-slate-700 bg-black">
+                    <iframe 
+                        src="https://www.youtube.com/embed/Lz66CBeydR0?rel=0" 
+                        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto;object-fit:contain;}span{height:1.5em;text-align:center;font:64px/1.5 sans-serif;color:#dc2626;text-shadow:0 0 0.5em black;transition:transform 0.2s;}a:hover span{transform:scale(1.1);color:white;}</style><a href=https://www.youtube.com/embed/Lz66CBeydR0?autoplay=1><img src='image_d1f4e2.jpg' alt='סרטון הסברה'><span>▶</span></a>"
+                        title="סרטון הסברה" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section (Moved Up for visual impact) -->
+    <section class="py-12 bg-slate-50">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-secondary mb-4">המערך בפעולה</h2>
+                <p class="text-lg text-slate-600">המתנדבים שלנו בשטח, מסייעים לחיילים פצועים ולחולים בעורף.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Image 1 -->
+                <div class="rounded-xl overflow-hidden shadow-lg border-4 border-white group relative bg-black">
+                    <img src="WhatsApp%20Image%202026-03-11%20at%2013.09.43.jpeg" alt="סיוע לחיילים ופצועים" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+                </div>
+                <!-- Image 2 -->
+                <div class="rounded-xl overflow-hidden shadow-lg border-4 border-white group relative bg-black">
+                    <img src="WhatsApp%20Image%202026-03-11%20at%2013.09.44.jpg" alt="חלוקת תרופות לחיילים בשטח" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+                </div>
+                <!-- Video 3 -->
+                <div class="rounded-xl overflow-hidden shadow-lg border-4 border-white group relative bg-black">
+                    <video src="WhatsApp%20Video%202026-03-11%20at%2013.07.36.mp4" autoplay loop muted playsinline class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500"></video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Story Section (Now Collapsible Tab) -->
+    <section class="py-8 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <button onclick="toggleStory()" class="w-full bg-slate-100 hover:bg-slate-200 text-secondary font-bold py-5 px-6 rounded-2xl flex justify-between items-center transition shadow-sm border border-slate-200">
+                <span class="text-xl sm:text-2xl flex items-center gap-3"><i class="fa-solid fa-book-open text-primary"></i> הסיפור שלנו: החזית השקטה של ישראל</span>
+                <i id="storyIcon" class="fa-solid fa-chevron-down text-2xl transition-transform duration-300 text-slate-500"></i>
+            </button>
+            
+            <div id="storyContent" class="hidden mt-6 px-4 pb-6">
+                <div class="prose prose-lg text-slate-700 mx-auto leading-relaxed space-y-6">
+                    <p>
+                        בימים אלו, כשהמדינה כולה עוצרת את נשימתה מול איראן והחזית בוערת, מתנהלת ממש מתחת לרדאר חזית נוספת, שקטה אך קריטית לא פחות.
+                    </p>
+                    <div class="bg-red-50 border-r-4 border-red-500 p-6 rounded-l-lg my-8">
+                        <p class="font-medium text-red-900 m-0 text-lg italic">
+                            "תאר לעצמך קשיש או חולה כרוני, יושב בממ"ד, חרד מהמצב הביטחוני – ואז מגלה שהתרופה מצילת החיים שלו עומדת להיגמר. בלי התרופה הזו, מצבו יידרדר במהירות."
+                        </p>
+                    </div>
+                    <p>
+                        בזמן שמערכת הבריאות עמוסה עד קצה גבול היכולת, אסור לנו לתת לאף אדם להגיע לסכנת חיים ולאשפוז מיותר, רק בגלל מחסור בכדור. כדי לעמוד בהבטחה הזו תחת אש ובמצב החירום הנוכחי, המערך שלנו פועל סביב השעון. 
+                    </p>
+
+                    <div class="bg-blue-50 border-r-4 border-blue-500 p-6 rounded-l-lg my-8">
+                        <h3 class="font-bold text-blue-900 text-xl mb-2"><i class="fa-solid fa-ribbon mr-2"></i> משימה קדושה: סיוע לחיילים פצועים</h3>
+                        <p class="text-blue-800 m-0 text-lg">
+                            אנו עומדים כעת בפני משימה קריטית נוספת: הענקת סיוע לחיילי צה"ל שנפצעו בקרבות, וזקוקים בדחיפות לתרופות מיוחדות, משככי כאבים וציוד רפואי עם חזרתם לקהילה או למרכזי השיקום. אנו מגיעים עד אליהם כדי שגיבורי ישראל לא יישארו ללא הטיפול הטוב ביותר.
+                        </p>
+                    </div>
+
+                    <p>
+                        נאלצנו להכניס בדחיפות לפעילות רוקחים נוספים, רכבי חלוקה ואופנועי משלוחים שדוהרים גם תחת אזעקות, וכן לרכוש תרופות חדשות ויקרות לחולים שאין לנו עבורם מענה במלאי התרופות שאנו אוספים.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Breakdown Section -->
+    <section class="py-16 bg-slate-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-secondary mb-4">יעד הגיוס הדחוף: 1,000,000 ש"ח</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">כדי להרחיב את המערך ולתת מענה אדיר לחיילים פצועים ולכלל החולים הכרוניים בעורף, אנו חייבים את תמיכתכם. לאן הכסף הולך?</p>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="max-w-3xl mx-auto mb-16">
+                <div class="flex justify-between text-sm font-bold mb-2 text-slate-700">
+                    <span>גויסו: 150,000 ש"ח</span>
+                    <span>יעד: 1,000,000 ש"ח</span>
+                </div>
+                <div class="w-full bg-gray-300 rounded-full h-4">
+                    <div class="bg-red-600 h-4 rounded-full" style="width: 15%"></div>
+                </div>
+            </div>
+
+            <!-- Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                <!-- Item 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition">
+                    <div class="text-red-500 text-4xl mb-4"><i class="fa-solid fa-truck-medical"></i></div>
+                    <h3 class="font-bold text-xl mb-2">רכב חלוקה דחוף</h3>
+                    <p class="text-slate-500 text-sm mb-4">הכנסת רכב נוסף הפועל ב-2 משמרות ביום.</p>
+                    <div class="font-bold text-primary bg-red-50 py-1 rounded">30,000 ₪ לחודש</div>
+                </div>
+                <!-- Item 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition">
+                    <div class="text-red-500 text-4xl mb-4"><i class="fa-solid fa-user-doctor"></i></div>
+                    <h3 class="font-bold text-xl mb-2">תגבור צוות רוקחים</h3>
+                    <p class="text-slate-500 text-sm mb-4">2 רוקחים בחירום לבקרת איכות התרופות והתאמתן.</p>
+                    <div class="font-bold text-primary bg-red-50 py-1 rounded">48,000 ₪ לחודש</div>
+                </div>
+                <!-- Item 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition">
+                    <div class="text-red-500 text-4xl mb-4"><i class="fa-solid fa-motorcycle"></i></div>
+                    <h3 class="font-bold text-xl mb-2">אופנועי משלוחים</h3>
+                    <p class="text-slate-500 text-sm mb-4">השמשת 2 אופנועים להגעה מהירה תחת אזעקות.</p>
+                    <div class="font-bold text-primary bg-red-50 py-1 rounded">14,000 ₪ לחודש</div>
+                </div>
+                <!-- Item 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition">
+                    <div class="text-red-500 text-4xl mb-4"><i class="fa-solid fa-pills"></i></div>
+                    <h3 class="font-bold text-xl mb-2">מערך הסיוע המהיר</h3>
+                    <p class="text-slate-500 text-sm mb-4">מערך מהיר להשגת תרופות וציוד לחיילים ופצועים, (שאינם בהתוויה או בסל)</p>
+                    <div class="font-bold text-primary bg-red-50 py-1 rounded">כל סכום מציל חיים</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donate" class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <div class="bg-white rounded-2xl shadow-2xl border border-slate-100 overflow-hidden">
+                <div class="bg-primary text-white text-center py-6 px-4">
+                    <h2 class="text-3xl font-bold mb-2">תרמו עכשיו</h2>
+                    <p>התרומה שלך היא אוויר לנשימה עבור חולה שיושב בממ"ד</p>
+                </div>
+                
+                <div class="p-8">
+                    <form id="donationForm" onsubmit="handleDonation(event)">
+                        <!-- Amount Selection -->
+                        <div class="mb-6">
+                            <label class="block text-slate-700 font-bold mb-3">בחרו סכום תרומה:</label>
+                            <div class="grid grid-cols-3 gap-3 mb-3">
+                                <button type="button" class="amount-btn border-2 border-slate-200 rounded-lg py-3 font-bold text-lg hover:border-primary hover:text-primary transition" onclick="selectAmount(this, 360)">₪360</button>
+                                <button type="button" class="amount-btn border-2 border-primary bg-red-50 text-primary rounded-lg py-3 font-bold text-lg transition" onclick="selectAmount(this, 720)">₪720</button>
+                                <button type="button" class="amount-btn border-2 border-slate-200 rounded-lg py-3 font-bold text-lg hover:border-primary hover:text-primary transition" onclick="selectAmount(this, 1000)">₪1,000</button>
+                            </div>
+                            <div class="relative">
+                                <span class="absolute right-4 top-1/2 transform -translate-y-1/2 text-slate-500 font-bold">₪</span>
+                                <input type="number" id="customAmount" placeholder="סכום אחר" class="w-full border-2 border-slate-200 rounded-lg py-3 pr-10 pl-4 focus:outline-none focus:border-primary transition" oninput="clearButtons()">
+                            </div>
+                        </div>
+
+                        <!-- Personal Details -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <label class="block text-slate-700 text-sm font-bold mb-2">שם מלא</label>
+                                <input type="text" required class="w-full border border-slate-300 rounded-lg px-4 py-2 focus:outline-none focus:border-primary">
+                            </div>
+                            <div>
+                                <label class="block text-slate-700 text-sm font-bold mb-2">טלפון</label>
+                                <input type="tel" required class="w-full border border-slate-300 rounded-lg px-4 py-2 focus:outline-none focus:border-primary">
+                            </div>
+                            <div class="md:col-span-2">
+                                <label class="block text-slate-700 text-sm font-bold mb-2">אימייל (לקבלת קבלה)</label>
+                                <input type="email" required class="w-full border border-slate-300 rounded-lg px-4 py-2 focus:outline-none focus:border-primary">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="w-full bg-primary hover:bg-primaryDark text-white font-bold text-xl py-4 rounded-xl shadow-lg transition transform hover:-translate-y-1">
+                            המשך לתשלום מאובטח <i class="fa-solid fa-lock ml-2"></i>
+                        </button>
+                        <p class="text-center text-xs text-slate-400 mt-4">* התרומה מוכרת לצרכי מס לפי סעיף 46</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 text-center">
+        <div class="container mx-auto px-4">
+            <div class="text-white text-2xl font-bold mb-4">
+                <i class="fa-solid fa-briefcase-medical text-primary mr-2"></i> חברים לרפואה (ע"ר 58-040-874-8)
+            </div>
+            <p class="mb-6">חברים לרפואה ארגון הגג בישראל בסיוע בתרופות ובקידום הביטחון התרופתי של ישראל</p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-8">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-primary"></i>
+                    <span>שמואל הנביא 4, בני ברק</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-phone text-primary"></i>
+                    <a href="tel:035792220" class="hover:text-white transition" dir="ltr">03-5792220</a>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-envelope text-primary"></i>
+                    <a href="mailto:haverim@haverim.org.il" class="hover:text-white transition">haverim@haverim.org.il</a>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-globe text-primary"></i>
+                    <a href="https://www.haverim.org.il" target="_blank" class="hover:text-white transition">www.haverim.org.il</a>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-700 pt-8 text-sm">
+                &copy; 2024 כל הזכויות שמורות לחברים לרפואה.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Thank You Modal (Hidden by default) -->
+    <div id="thankYouModal" class="fixed inset-0 bg-black bg-opacity-70 z-50 hidden flex justify-center items-center px-4">
+        <div class="bg-white rounded-2xl p-8 max-w-md text-center shadow-2xl transform scale-95 transition-all">
+            <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fa-solid fa-check text-4xl text-green-500"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-slate-800 mb-2">תודה רבה!</h3>
+            <p class="text-slate-600 mb-6">בקשת התרומה (הדגמה) נקלטה בהצלחה. בזכותך, נוכל להמשיך להציל חיים.</p>
+            <button onclick="closeModal()" class="bg-slate-800 hover:bg-slate-900 text-white font-bold py-2 px-6 rounded-lg transition">
+                סגור
+            </button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        let currentAmount = 720;
+
+        function selectAmount(btn, amount) {
+            // Remove active styles from all buttons
+            const buttons = document.querySelectorAll('.amount-btn');
+            buttons.forEach(b => {
+                b.classList.remove('border-primary', 'bg-red-50', 'text-primary');
+                b.classList.add('border-slate-200');
+            });
+
+            // Add active styles to clicked button
+            btn.classList.remove('border-slate-200');
+            btn.classList.add('border-primary', 'bg-red-50', 'text-primary');
+
+            // Clear custom amount input
+            document.getElementById('customAmount').value = '';
+            currentAmount = amount;
+        }
+
+        function clearButtons() {
+            const buttons = document.querySelectorAll('.amount-btn');
+            buttons.forEach(b => {
+                b.classList.remove('border-primary', 'bg-red-50', 'text-primary');
+                b.classList.add('border-slate-200');
+            });
+            currentAmount = document.getElementById('customAmount').value;
+        }
+
+        function handleDonation(event) {
+            event.preventDefault();
+            // In a real website, this is where you'd connect to a payment gateway (JGive, Meshulam, etc.)
+            
+            // Show modal instead of alert
+            const modal = document.getElementById('thankYouModal');
+            modal.classList.remove('hidden');
+            modal.querySelector('.transform').classList.remove('scale-95');
+            modal.querySelector('.transform').classList.add('scale-100');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('thankYouModal');
+            modal.classList.add('hidden');
+        }
+
+        // Toggle the story section visibility
+        function toggleStory() {
+            const content = document.getElementById('storyContent');
+            const icon = document.getElementById('storyIcon');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+    </script>
+</body>
+</html>
